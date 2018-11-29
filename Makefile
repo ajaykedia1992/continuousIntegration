@@ -11,7 +11,6 @@ PKG_CHECK_LIBS = `pkg-config --libs check`
 
 .PHONY: all dep clean
 
-
 all: geometry_test
 
 geometry_test: geometry_test.o geometry.o
@@ -24,7 +23,7 @@ geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
 dep:
-	sudo apt-get -y update && sudo apt-get install -y check
+	brew install check
 
 clean:
 	$(RM) *.o

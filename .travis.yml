@@ -1,4 +1,4 @@
-os: linux
+os: osx
 install: make dep
 script: make test
 sudo: required
