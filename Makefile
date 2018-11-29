@@ -24,7 +24,7 @@ geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
 dep:
-	sudo apt-get -y update && sudo apt-get install check
+	sudo apt-get -y update && sudo apt-get install -y check
 
 clean:
 	$(RM) *.o
